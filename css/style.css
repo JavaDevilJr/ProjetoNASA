@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.cdnfonts.com/css/nasa');
+/*header (nav)*/
+body{
+    background-color: rgb(113, 114, 114);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#principal{
+    width: 1048;
+    margin: 0;
+}
+
+/*imagens*/
+.logonav{
+    height: 115px;
+    width: 100%;
+    position: absolute;
+}
+.logotipo{
+    margin: 5px 0 0 80px;
+    height: 100px;
+    width: 120px;
+    position: relative;
+}
+
+.header-nav{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+
+.header-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 0 15px 0 0;
+    padding: 10px 0 0 0;
+}
+
+.header-nav a{
+    color: rgb(211, 211, 211);
+    font-family: 'nasa',"sans-serif";
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transition: background .6s;
+    padding: 12px;
+    
+}
+
+.header-nav a:hover{
+    background-color: #fcfdff;
+    opacity: 0.6;    
+    
+}
+
+/*formulario.*/
+
+legend {
+    text-transform: uppercase;
+    color: #244f6b;
+    size: 24px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 24px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 4px;
+    
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    padding: 10px;
+    border: 2px 0 0 0 solid;
+    border-radius: 4px;
+    border-bottom: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: #244f6b;
+    color: #3e8e41;
+}
+
+.reset:hover {
+    background-color: #d8233b;
+}
+
+/*table*/
+
+table {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 24px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    border-radius: 4px;
+    white-space: nowrap;
+    
+}
+caption{
+    font-family: 'nasa',"sans-serif";
+    font-size: 40px;
+    color:rgb(211, 211, 211);
+}
+td{
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.button-info{
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.button-edit{
+    background-color: #ee9126;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.button-del{
+    background-color: #d8233b;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+

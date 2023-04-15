@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NASA - Cadastrar Funcionários</title>
+</head>
+
+<body>
+    <header class="header-top">
+        <img class="logonav" src="img/logonav.png" alt="stardust">
+        <img class="logotipo" src="img/logotipo.png" alt="logotiponasa">
+        <nav class="header-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastrarFuncionarios.html">Cadastrar</a></li>
+                <li><a href="FuncionariosCadastrados.html">Tripulantes</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Cadastro de Tripulantes</legend>
+            <label>Nome:</label>
+            <input type="text" name="txt_nome" required placeholder="Nome Completo" title="Informe o Nome"
+                maxlength="50" autofocus>
+            <br><br>
+
+            <label>CPF: </label>
+            <input type="text" name="txt_cpf" pattern="[0-9]{2}[.][0-9]{3}[.][0-9]{3}[-][0-9]{2}"
+                title="Informe um Cpf válido no formato 99.999.999-99" placeholder="99.999.999-99" required>
+            <br><br>
+
+            <label>Data de Nascimento: </label>
+            <input type="date" required name="txt_nascimento">
+            <br><br>
+
+            <label for="">Sexo:</label>
+            <input type="radio" name="sexo" id="" value="M">Masculino
+            <input type="radio" name="sexo" id="" value="F" checked>Feminino
+            <br><br>
+
+            <label>Altura: </label>
+            <input type="number" required name="altura" placeholder="Ex: 180cm">
+            <br><br>
+
+            <label>País: </label>
+            <select required>
+                <option value="">Selecione...</option>
+                <option value="BR">Brasil</option>
+                <option value="RUS">Russia</option>
+                <option value="CHN">China</option>
+                <option value="EUA">Estados Unidos</option>
+            </select>
+            <br><br>
+
+            <label>Destino: </label>
+            <select required>
+                <option value="">Selecione...</option>
+                <option value="OTGLX">🌌Outra Galáxia</option>
+                <option value="LUA">🌘Lua</option>
+                <option value="STN">🪐Saturno</option>
+            </select>
+            <br><br>
+
+            <label>Pressão "G" suportada: </label>
+            <input type="number" required name="altura" min="3" max="10">
+            <br><br>
+
+
+            <label for="">Profissão: </label>
+            <input type="checkbox" name="piloto" checked value="pil">Piloto
+            <input type="checkbox" name="engenheiro" value="eng">Engenheiro
+            <input type="checkbox" name="fisico" value="fis">Físico
+            <input type="checkbox" name="astronomo" value="astro">Astrônomo
+            <br><br>
+
+            <textarea name="Mensagem" id="" cols="100" rows="10"
+                placeholder="Digite informações adicionais do funcionário"></textarea>
+            <br><br>
+
+            <input type="submit" value="💾 Salvar" />
+            <input type="reset" class="reset" value="❌ Limpar" />
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
